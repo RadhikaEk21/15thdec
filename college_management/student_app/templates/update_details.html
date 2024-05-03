@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %} 
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="n1" value="{{x.Name}}"></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="text" name="a1"></td>
+
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><input type="text" name="ad1"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td><input type="radio" name="g1" value="Male">Male
+               <input type="radio" name="g1" value="FeMale">FeMale</td>
+            </tr>
+            <tr>
+                <th>DOB</th>
+                <td><input type="date" name="d1"></td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td><input type="file" name="p1"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="UPDATE" style="background-color:green"></td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
